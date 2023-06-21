@@ -91,6 +91,9 @@ if __name__ == "__main__":
     thing = ModronThing("./Data/progress.yaml")
     while True:
         thing.create('Monodrone')
+        if random.random() * delay < 1:
+            thing.upgrade()
+        
         os.system("clear")
         print(
             f"""\u001B[27J{
@@ -102,8 +105,6 @@ if __name__ == "__main__":
             }delay: {delay}\n{''
             }---"""
         )
-        if random.random() * delay < 1:
-            thing.upgrade()
         thing.save()
         time.sleep(delay)
         delay += random.random()
