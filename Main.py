@@ -102,8 +102,8 @@ if __name__ == "__main__":
             }delay: {delay}\n{''
             }---"""
         )
-        thing.save()
         if random.random() * delay < 1:
             thing.upgrade()
+        thing.save()
         time.sleep(delay)
         delay += random.random()
