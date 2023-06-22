@@ -52,18 +52,16 @@ class ModronThing:
 
 
     def create(self, modron_id: str):
-        current_created_id = modron_id
-         
         found_item = False
         for item in self.__data['inv']:
-            if item['id'] == current_created_id:
+            if item['id'] == modron_id:
                 found_item = True
                 item['amount'] += 1
                 break
     
         if found_item == False:
             self.__data['inv'].append({
-                'id': current_created_id,
+                'id': modron_id,
                 'amount': 1,
             })
             
@@ -91,7 +89,7 @@ if __name__ == "__main__":
     thing = ModronThing("./Data/progress.yaml")
     while True:
         thing.create('Monodrone')
-        if random.random() * delay < 1:
+        if random.random() * delay * delay < 1:
             thing.upgrade()
         
         os.system("clear")
@@ -107,4 +105,4 @@ if __name__ == "__main__":
         )
         thing.save()
         time.sleep(delay)
-        delay += random.random()
+        delay += random.random() * random.random()
