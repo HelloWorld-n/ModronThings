@@ -85,7 +85,7 @@ class ModronThing:
             self.save()
 
 if __name__ == "__main__":
-    delay = 10
+    delay = 1
     thing = ModronThing("./Data/progress.yaml")
     while True:
         thing.create('Monodrone')
