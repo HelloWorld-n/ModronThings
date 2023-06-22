@@ -1,57 +1,57 @@
 - id: Monodrone
   upgrades:
-    - chances: 0.011
+    - chances: 0.01
       next_id: Duodrone
 - id: Duodrone
   upgrades:
-    - chances: 0.0115
+    - chances: 0.0125
       next_id: Tridrone
 - id: Tridrone
   upgrades:
-    - chances: 0.012
+    - chances: 0.015
       next_id: Quadrone
 - id: Quadrone
   upgrades:
-    - chances: 0.0125
+    - chances: 0.0175
       next_id: Pentadrone
 - id: Pentadrone
   upgrades:
-    - chances: 0.013
+    - chances: 0.02
       next_id: Decaton
 - id: Decaton
   upgrades:
-    - chances: 0.0135
+    - chances: 0.0225
       next_id: Nonaton
 - id: Nonaton
   upgrades:
-    - chances: 0.014
+    - chances: 0.025
       next_id: Octon
 - id: Octon
   upgrades:
-    - chances: 0.0145
+    - chances: 0.0275
       next_id: Septon
 - id: Septon
   upgrades:
-    - chances: 0.015
+    - chances: 0.03
       next_id: Hexton
 - id: Hexton
   upgrades:
-    - chances: 0.0155
+    - chances: 0.0325
       next_id: Quinton
 - id: Quinton
   upgrades:
-    - chances: 0.016
+    - chances: 0.035
       next_id: Quarton
 - id: Quarton
   upgrades:
-    - chances: 0.0165
+    - chances: 0.0375
       next_id: Tertian
 - id: Tertian
   upgrades:
-    - chances: 0.017
+    - chances: 0.04
       next_id: Secundus
 - id: Secundus
   upgrades:
-    - chances: 0.075
+    - chances: 0.0425
       next_id: Primus
 - id: Primus
