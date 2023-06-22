@@ -1,10 +1,10 @@
 - id: Monodrone
   upgrades:
-    - chances: 0.01
+    - chances: 0.011
       next_id: Duodrone
 - id: Duodrone
   upgrades:
-    - chances: 0.015
+    - chances: 0.0115
       next_id: Tridrone
 - id: Tridrone
   upgrades:
