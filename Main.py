@@ -74,7 +74,7 @@ class ModronThing:
                 item['part_done'] += part_done
                 while item['part_done'] >= 1:
                     item['part_done'] -= 1
-                    add_to_inv(item_id)
+                    self.add_to_inv(item_id)
                 break
     
         if found_item == False:
@@ -85,7 +85,7 @@ class ModronThing:
             self.__data['wip'].append(item)
             while item['part_done'] >= 1:
                 item['part_done'] -= 1
-                add_to_inv(item_id)
+                self.add_to_inv(item_id)
 
     def create(self, modron_id: str, *, create_upgrades: bool = False):
         self.add_to_inv(modron_id)
