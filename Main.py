@@ -12,14 +12,14 @@ os.system("")
 
 import strictyaml as strict_yaml
 
-os.chdir(os.path.dirname(__file__))
+HERE = os.path.dirname(__file__)
 
 import Schemas
 
 class ModronThing:
     def __init__(
         self, file_path: str, *, 
-        modron_file_path: str = "./Info/Modrons.yaml", 
+        modron_file_path: str = f"{HERE}/Info/Modrons.yaml", 
         auto_save: int | None = None,
     ):
         self.__file_path = file_path
@@ -114,7 +114,7 @@ class ModronThing:
 
 if __name__ == "__main__":
     delay = 1
-    thing = ModronThing("./Data/progress.yaml")
+    thing = ModronThing(f"{HERE}/Data/progress.yaml")
     while True:
         thing.create('Monodrone', create_upgrades = True)
         
